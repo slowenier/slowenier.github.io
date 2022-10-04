@@ -6,12 +6,163 @@
     margin:0;
     letter-spacing:3px;
         }
-    </style></head>
+    </style></head><html>
+    <head>
+        <style>
+
+                body {
+                margin: 0;
+                overflow: hidden;
+                background: black
+                }
+                h1 {
+                    text-shadow: 3px 6px 2px rgba(0, 0, 0, .3);
+                    text-align: center;
+                    color: white; 
+                    font-family: "Montserrat";
+                    font-size: 13px;
+    }
+    h2 {
+                    text-shadow: 3px 6px 2px rgba(0, 0, 0, .3);
+                    text-align: center;
+                    color: rgb(0, 255, 0); 
+                    font-family: "Helvetica";
+    }
+    
+                .main {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    opacity: 0.5;
+                }
+
+                .drop {
+                width: 15px;
+                height: 120px;
+                position: absolute;
+                animation: drop 0.5s linear infinite;
+                }
+
+                @keyframes drop {
+                0% {
+                    transform: translateY(0vh);
+                }
+                75% {
+                    transform: translateY(90vh);
+                }
+                100% {
+                    transform: translateY(90vh);
+                }
+                }
+
+                .stem {
+                width: 1px;
+                height: 60%;
+                margin-left: 7px;
+                background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.25));
+                animation: stem 0.5s linear infinite;
+                }
+
+                @keyframes stem {
+                0% {
+                    opacity: 1;
+                }
+                65% {
+                    opacity: 1;
+                }
+                75% {
+                    opacity: 0;
+                }
+                100% {
+                    opacity: 0;
+                }
+                }
+
+                .splat {
+                width: 15px;
+                height: 10px;
+                border-top: 2px dotted rgba(255, 255, 255, 0.5);
+                border-radius: 50%;
+                opacity: 1;
+                transform: scale(0);
+                animation: splat 0.5s linear infinite;
+                display: none;
+                }
+
+                body.splat-toggle .splat {
+                display: block;
+                }
+
+                @keyframes splat {
+                0% {
+                    opacity: 1;
+                    transform: scale(0);
+                }
+                80% {
+                    opacity: 1;
+                    transform: scale(0);
+                }
+                90% {
+                    opacity: 0.5;
+                    transform: scale(1);
+                }
+                100% {
+                    opacity: 0;
+                    transform: scale(1.5);
+                }
+                }
+        </style>
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    </head>
+    <style>  h5 {text-shadow: 3px 6px 2px rgba(0, 0, 0, .3);
+        text-align: center;
+        
+        margin-top: 520px;
+        
+
+        color: white; 
+        font-family: "Arial";
+        font-size: 13px;
+        text-align: center;
+        
+} </style>
+    <h5>Muzigi dinlemek icin tiklayin</h5>
+<body>
+    
+    <div class="main"></div>
+    <h1>  </h1>
+    <h1>
+        </h1>
+    <h2></h2>
+    <h6>&nbsp; slowenier</h6>
+   
+  </body>
+  <script>
+                 function show() 
+                 {
+                    $('.main').empty();
+                    var increment = 0;
+                    var drops = "";
+                    var backDrops = "";
+
+                    while (increment < 100) {
+                        var x = (Math.floor(Math.random() * (98 - 1 + 1) + 1));
+                        var y = (Math.floor(Math.random() * (5 - 2 + 1) + 2));
+                        increment += y;
+                        drops += '<div class="drop" style="left: ' + increment + '%; bottom: ' + (y + y - 1 + 100) + '%; animation-delay: 0.' + x + 's; animation-duration: 0.5' + x + 's;"><div class="stem" style="animation-delay: 0.' + x + 's; animation-duration: 0.5' + x + 's;"></div><div class="splat" style="animation-delay: 0.' + x + 's; animation-duration: 0.5' + x + 's;"></div></div>';
+                        backDrops += '<div class="drop" style="right: ' + increment + '%; bottom: ' + (y + y - 1 + 100) + '%; animation-delay: 0.' + x + 's; animation-duration: 0.5' + x + 's;"><div class="stem" style="animation-delay: 0.' + x + 's; animation-duration: 0.5' + x + 's;"></div><div class="splat" style="animation-delay: 0.' + x + 's; animation-duration: 0.5' + x + 's;"></div></div>';
+                    }
+                    $('.main').append(backDrops);
+                    }
+                    $('body').toggleClass('splat-toggle');
+                    show();
+  </script>
+</html>
     <link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
     <title>ANANIZI SIKEREM</title>
     <body oncontextmenu="return true;" unselectable="on" onselectstart="return true;"><canvas width="715" height="974"></canvas>
       <audio id="audio" preload="" autoplay="" loop="">
-        <source type="audio/mp3" src="https://cdn.discordapp.com/attachments/974682430537629696/1004543712497516594/where-have-you-been-sped-up.mp3">
+        <source type="audio/mp3" src="https://cdn.discordapp.com/attachments/1026646838071283776/1026648623506804746/mp3.mp3">
       </audio>
     <style>
             img[src*="https://64.media.tumblr.com/f32d431b36342ec918206f517c89893e/6b88e5e006296588-d3/s500x750/ffb837c564b8856c768ebe4a586b31fc6e119c03.gifv"] {
@@ -90,7 +241,8 @@
     
     <div class="center">
     <center>
-    <p>slowen#3333<nav><br></nav>
+        <nav></nav>
+    <p>eren.jss<nav><br></nav>
        <nav> </nav>
        <br>
     </p>
@@ -101,7 +253,7 @@
                 
                 <div class="animated fadeInUp">
                     
-                        <img src="https://c.tenor.com/daCLmPd83yQAAAAM/taner-taner-dans.gif" alt="UwU">
+                        <img src="https://cdn.discordapp.com/attachments/1026646838071283776/1026647391434190909/ezgif-2-579d4f71fa.gif" alt="UwU">
                         <pre><pre align="middle"><a href="https://twitter.com/slowenier" target="_blank"><i class="fab fa-twitter"></i></a> <a href="https://github.com/slowenier" target="_blank"><i class="fab fa-github"></i></a> <a href="https://discord.gg/zYMfBtJg" target="_blank"><i class="fab fa-discord"></i></a> <a href="https://instagram.com/eren.jss" target="_blank"><i class="fab fa-instagram"></i></a> <a href="https://open.spotify.com/user/31ntjhflknekpj4hbhurxoeqwfqm?si=c6c3687720094ebc" target="_blank"><i class="fab fa-spotify"></i></a> <a href="https://www.twitch.tv/none" target="_blank"><i class="fab fa-twitch"></i></a>  </pre></pre> 
                                 <center><div id="clockDisplay" class="clockStyle">09:44:37 PM</div></center>
             <script>
