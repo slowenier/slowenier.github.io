@@ -1,59 +1,143 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Heart_corazón.svg/640px-Heart_corazón.svg.png" type="image/x-icon">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>İrem ❤️ Eren</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>İbn-i Sina’nın Gizli Tarifi</title>
+  <style>
+    /* Genel stil ayarları */
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #1a252f; /* Koyu tonlu bir arka plan */
+      color: #ecf0f1; /* Yazılar için açık renk */
+    }
+
+    /* Logo kısmı */
+    .logo {
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    .logo svg {
+      width: 60px; /* Logonun genişliği */
+      height: 60px; /* Logonun yüksekliği */
+    }
+
+    /* Ana içerik alanı */
+    .container {
+      max-width: 900px;
+      margin: 100px auto;
+      background-color: rgba(255, 255, 255, 0.95);  /* İçeriği beyaz ve yarı saydam yaparak netlik sağladık */
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3em;
+      color: #27ae60; /* Başlık için yeşil renk */
+      margin-bottom: 20px;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+
+    p {
+      font-size: 1.2em;
+      line-height: 1.8;
+      margin-bottom: 30px;
+      color: #34495e; /* Yazılar için koyu gri renk */
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 40px;
+    }
+
+    li {
+      margin: 12px 0;
+      font-size: 1.3em;
+      color: #34495e;
+    }
+
+    /* Buton stili */
+    .btn {
+      display: inline-block;
+      background-color: #27ae60;
+      color: white;
+      padding: 15px 30px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 1.1em;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+      margin-top: 30px;
+    }
+
+    .btn:hover {
+      background-color: #2ecc71;
+    }
+
+    /* Footer kısmı */
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      font-size: 0.9em;
+      color: #95a5a6;
+    }
+
+    footer a {
+      color: #27ae60;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* WhatsApp ikonu stili */
+    .whatsapp-logo {
+      width: 30px; /* WhatsApp simgesinin boyutu */
+      height: 30px;
+      margin-right: 10px; /* Simgeden metne biraz boşluk */
+    }
+  </style>
 </head>
 <body>
-    <div class="gallery">
-        <img src="https://cdn.discordapp.com/attachments/1194470286502928404/1199772724806033468/1.gif?ex=65c3c26c&is=65b14d6c&hm=da9a6a68a3287eb0db232fc0a23b716eeefbc6bb901285b947d14fd1d30b0020&" alt="Resim 1" onclick="playMusic()">
-        <img src="https://cdn.discordapp.com/attachments/1194470286502928404/1199772725263224922/2.gif?ex=65c3c26c&is=65b14d6c&hm=b8445b9a16d1ba90eb0e22c97d5c9edf391cb6c62ee450d6057c2c2ea82471b4&" alt="Resim 2">
-        <img src="https://cdn.discordapp.com/attachments/1194470286502928404/1199772725749760010/3.gif?ex=65c3c26c&is=65b14d6c&hm=31c47724be4ee90faad4c1216ca3db634206d8831f7a5e505ca078de8bbe0640&" alt="Resim 3">
-        <img src="https://cdn.discordapp.com/attachments/1194470286502928404/1199772726156599416/4.gif?ex=65c3c26c&is=65b14d6c&hm=711cef0e43da13d1083bfd2d1eb4903d9ca0f3ea845e02bdc0eb3ee7c075fcd5&" alt="Resim 4">
-        <img src="https://cdn.discordapp.com/attachments/1194470286502928404/1207466743367344208/Beige_Playful_Collage_Thank_You_Summer_Your_Story.gif?ex=65dfc009&is=65cd4b09&hm=fa284e27e0172a314f00cd4b667008257e1467841ea4fd16eb63d1a87a0df0d1&" alt="Resim 5" onclick="playMusic()">
-    </div>
-    <script>
-        var audio;
+  <div class="logo">
+    <!-- Üç Yapraklı Bitki Logo SVG -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+      <circle cx="32" cy="32" r="32" fill="#27ae60"/>
+      <circle cx="20" cy="28" r="8" fill="white"/>
+      <circle cx="32" cy="20" r="8" fill="white"/>
+      <circle cx="44" cy="28" r="8" fill="white"/>
+    </svg>
+  </div>
 
-        function playMusic() {
-            if (!audio) {
-                audio = new Audio("https://cdn.discordapp.com/attachments/1194470286502928404/1199808063826296842/x2mate.com_-_Ozbi_-_Dunyam_320_kbps_mp3cut.net.mp3?ex=65c3e355&is=65b16e55&hm=e128b96ab852f00ab6cab693f5bda04ba638484ad0fec0d0dba069e0bbab98ac&");
-                audio.loop = true; // Müziği sürekli tekrar et
-                audio.play();
-                audio.paused} else {
-        // Eğer ses nesnesi varsa, duraklat veya çalmaya devam et
-        if (audio.paused) {
-            audio.play();
-        } else {
-            audio.pause();
-        }
-            }
-        }
-    </script>
-    <style>
-        body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-}
+  <div class="container">
+    <h1>İbn-i Sina’nın Gizli Tarifi</h1>
+    <p>Yüzyıllardır kaybolmuş olan bu özel tarif, şimdi sizinle. Evde kolayca hazırlayabileceğiniz, **bel ağrılarından kurtulmak** için doğal bir çözüm! İbn-i Sina'nın gizli tarifiyle 7 gün içinde bel ağrılarından kurtulun!</p>
+    
+    <ul>
+      <li>Evde kolayca hazırlanır</li>
+      <li>İlaç kullanmadan, doğal çözüm</li>
+      <li>Hemen uygulanabilir, sonuçlar kısa sürede görünür</li>
+    </ul>
 
-.gallery {
-    max-width: 100%;
-    margin: 0 auto; /* Merkezi hizalama */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+    <p>Merak etmeyin, gizli tarif size hemen ulaştırılacak. Aşağıdaki butona tıklayarak, daha fazla bilgi almak için WhatsApp üzerinden bizimle iletişime geçebilirsiniz:</p>
+    <a href="https://wa.me/639122441774" class="btn">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Logo" class="whatsapp-logo"> WhatsApp için tıklayın
+    </a>
+  </div>
 
-img {
-    width: 100%;
-    height: auto;
-    margin: 0 auto; /* Merkezi hizalama */
-}
-
-    </style>
+  <footer>
+    <p>© 2025 İbn-i Sina’nın Gizli Tarifi. Tüm hakları saklıdır.</p>
+    <p><a href="https://wa.me/90XXXXXXXXXX">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Logo" class="whatsapp-logo"> WhatsApp ile iletişime geçin
+    </a></p>
+  </footer>
 </body>
 </html>
